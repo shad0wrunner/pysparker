@@ -1,0 +1,142 @@
+{
+    "ProfileName": "[API] Basic Scan Profile auto-created from file",
+    "PolicyId": "",
+    "ReportPolicyId": "",
+    "TargetUri": "http://35.243.174.236:3000",
+    "AgentGroupId": null,
+    "AgentId": null,
+    "CreateType": "Website",
+    "IsPrimary": true,
+    "IsShared": false,
+    "IsTimeWindowEnabled": false,
+    "AdditionalWebsites": [],
+    "AgentGroupName": null,
+    "BasicAuthenticationApiModel": {
+        "Credentials": null,
+        "IsEnabled": false,
+        "NoChallenge": false
+    },
+    "ClientCertificateAuthenticationSetting": null,
+    "Cookies": null,
+    "CrawlAndAttack": true,
+    "EnableHeuristicChecksInCustomUrlRewrite": true,
+    "ExcludedLinks": [
+        {
+            "RegexPattern": "(log|sign)\\-?(out|off)"
+        },
+        {
+            "RegexPattern": "exit"
+        },
+        {
+            "RegexPattern": "endsession"
+        },
+        {
+            "RegexPattern": "gtm\\.js"
+        },
+        {
+            "RegexPattern": "WebResource\\.axd"
+        },
+        {
+            "RegexPattern": "ScriptResource\\.axd"
+        }
+    ],
+    "DisallowedHttpMethods": [],
+    "ExcludeLinks": true,
+    "FindAndFollowNewLinks": true,
+    "FormAuthenticationSettingModel": {
+        "CustomScripts": [],
+        "DefaultPersonaValidation": null,
+        "DetectBearerToken": true,
+        "DisableLogoutDetection": false,
+        "IsEnabled": false,
+        "LoginFormUrl": null,
+        "LoginRequiredUrl": null,
+        "LogoutKeywordPatterns": null,
+        "LogoutKeywordPatternsValue": null,
+        "LogoutRedirectPattern": null,
+        "OverrideTargetUrl": false,
+        "Personas": [],
+        "PersonasValidation": null
+    },
+    "HeaderAuthentication": {
+        "Headers": [],
+        "IsEnabled": false
+    },
+    "ImportedLinks": [],
+    "ImportedFiles": [],
+    "IsMaxScanDurationEnabled": true,
+    "MaxDynamicSignatures": 60,
+    "MaxScanDuration": 3,
+    "Scope": "EnteredPathAndBelow",
+    "SubPathMaxDynamicSignatures": 30,
+    "TimeWindow": {
+        "Items": [
+            {
+                "Day": "Monday",
+                "From": "09:00",
+                "ScanningAllowed": true,
+                "To": "18:00"
+            },
+            {
+                "Day": "Tuesday",
+                "From": "09:00",
+                "ScanningAllowed": true,
+                "To": "18:00"
+            },
+            {
+                "Day": "Wednesday",
+                "From": "09:00",
+                "ScanningAllowed": true,
+                "To": "18:00"
+            },
+            {
+                "Day": "Thursday",
+                "From": "09:00",
+                "ScanningAllowed": true,
+                "To": "18:00"
+            },
+            {
+                "Day": "Friday",
+                "From": "09:00",
+                "ScanningAllowed": true,
+                "To": "18:00"
+            },
+            {
+                "Day": "Saturday",
+                "From": "09:00",
+                "ScanningAllowed": true,
+                "To": "18:00"
+            },
+            {
+                "Day": "Sunday",
+                "From": "09:00",
+                "ScanningAllowed": true,
+                "To": "18:00"
+            }
+        ]
+    },
+    "UrlRewriteAnalyzableExtensions": "htm,html",
+    "UrlRewriteBlockSeparators": "/$.,;|:",
+    "UrlRewriteMode": "Heuristic",
+    "UrlRewriteRules": [],
+    "DoNotDifferentiateProtocols": true,
+    "UrlRewriteExcludedLinks": [],
+    "OAuth2SettingModel": {
+        "FlowType": null,
+        "AuthenticationType": "None",
+        "AccessTokenEndpoint": {
+            "Url": null,
+            "ContentType": null,
+            "Method": null
+        },
+        "AuthorizationCodeEndpoint": null,
+        "AccessTokenItems": [],
+        "AuthorizationCodeItems": [],
+        "ResponseFields": null,
+        "ThreeLeggedFields": null,
+        "Id": null,
+        "Headers": null,
+        "FormAuthenticationSetting": null,
+        "BasicAuthenticationSetting": null
+    }
+}

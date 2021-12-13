@@ -1,0 +1,36 @@
+# General Configuration
+# You can pass user and token in cmd parameters -u and -t respectively instead. cmd parameters have priority over config
+API_HOST: your_netsparker_host_com (e.g. nets.security.com)
+USERID: 4cf2a31341d641234234939847 # from the config
+TOKEN: 4kHujnl34huh44hu4h4uh4u4hu # from the config
+
+# Scan Runs parameters (single-scan run) - these will be used when no --group is specified
+SCAN_URL: http://35.243.174.236:3000 # example url
+SCAN_PROFILE: "[API] Basic Scan Profile auto-created from file (1 hour)"
+
+# Group Scans parameters (if running with --group <group_name>)
+# Scan Profiles for each website are selected by default if configured in UI with 'Primary' option for given website
+POLICY_NAME: ""  # If set to "" - use default policies defined in scan profiles for each scan
+
+# Severities thresholds - how many defects will cause exit with an error code. -1 - threshold is not considered
+# Break on threshold - should the task exit once threshold is hit (scan will still be running)
+CRITICAL: 0
+HIGH: 1
+MEDIUM: -1
+LOW: -1
+INFO: -1
+BESTPRACTICE: -1
+THRESHOLD_EXIT_CODE: 13
+BREAK_ON_THRESHOLD: False
+
+# Other options
+INCLUDE_ACCEPTED_AND_FP: False  # should AcceptedRisk and FalsePositives be included in vulnerabilities counts
+SCAN_POLLING_INTERVAL: 25  # delay between polling for scan state updates (sec)
+
+## Options for the Setup script
+# Location of scan policy and profile JSON-definitions
+SCAN_POLICY_FILE: ./json/scan_policy.json
+SCAN_PROFILE_FILE: ./json/scan_profile.json
+
+# Setup script options
+CONTACT_EMAIL: mail@security.com  # required to set up a website
